@@ -136,7 +136,6 @@ public class Cliente {
 
     public void removeFactura(Factura factura) {
         this.facturas.remove(factura);
-        factura.setCliente(null);
     }
 
     @Override

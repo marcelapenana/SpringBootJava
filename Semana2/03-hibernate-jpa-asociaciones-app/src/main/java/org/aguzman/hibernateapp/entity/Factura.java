@@ -50,6 +50,7 @@ public class Factura {
         this.total = total;
     }
 
+    //met
     public Cliente getCliente() {
         return cliente;
     }

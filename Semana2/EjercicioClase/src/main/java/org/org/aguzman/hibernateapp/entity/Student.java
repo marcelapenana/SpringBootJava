@@ -79,9 +79,10 @@ public class Student {
         this.grupos = grupo;
     }
 
+    //met
+
     public Student addGrupo(Group grupo){
         this.grupos.add(grupo);
-
        // grupo.setStudent(null);
         return this;
     }
