@@ -20,7 +20,9 @@ public class Alumno {
     @JoinTable(name = "tbl_alumnos_cursos", joinColumns = @JoinColumn(name="alumno_id"),
     inverseJoinColumns = @JoinColumn(name = "curso_id"),
     uniqueConstraints = @UniqueConstraint(columnNames = {"alumno_id", "curso_id"}))
-    private List<Curso> cursos;//Le estamos aplicando manyTomany y es donde esta la relación
+    private List<Curso> cursos;
+
+    //Le estamos aplicando manyTomany y es donde esta la relación
     //Para ello generamos la tabla intermedia tbl_alumnos cursos
     //Alumnos y cursos son entidades independientes , direccional de alumnos a cursos
     //Cursos a alumnos,
