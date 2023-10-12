@@ -1,4 +1,4 @@
-package org.org.aguzman.hibernateapp.entity;
+package org.aguzman.hibernateapp.entity;
 
 import jakarta.persistence.*;
 
@@ -19,8 +19,13 @@ public class Marks {
     @JoinColumn(name="id_materia")
     private Subject materia;
 
-    public Marks() {
+    private int nota;
 
+    public Marks() {
+    }
+
+    public Marks(int nota) {
+        this.nota = nota;
     }
 
     public Marks(Long id) {
@@ -35,7 +40,7 @@ public class Marks {
         this.id = id;
     }
 
-    public Student getEstudiante(){return estudiante;}
+    public Student getEstudiante(Student estudiante){return this.estudiante;}
     public void setEstudiante(Student estudiante) {
         this.estudiante = estudiante;
     }
@@ -43,6 +48,22 @@ public class Marks {
     public Subject getSubjet(){return materia;}
     public void setSubjet(Subject materia) {
         this.materia = materia;
+    }
+
+    public Subject getMateria() {
+        return materia;
+    }
+
+    public void setMateria(Subject materia) {
+        this.materia = materia;
+    }
+
+    public int getNota() {
+        return nota;
+    }
+
+    public void setNota(int nota) {
+        this.nota = nota;
     }
 
     @Override

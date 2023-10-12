@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <persistence xmlns="https://jakarta.ee/xml/ns/persistence" version="3.0">
-    <persistence-unit name="ejemploJPA" transaction-type="RESOURCE_LOCAL">
+    <persistence-unit name="ejemploJP" transaction-type="RESOURCE_LOCAL">
         <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
         <class>org.aguzman.hibernateapp.entity.Student</class>
         <class>org.aguzman.hibernateapp.entity.Group</class>
         <class>org.aguzman.hibernateapp.entity.Subject</class>
-        <class>org.aguzman.hibernateapp.entity.ClienteDetalle</class>
-        <class>org.aguzman.hibernateapp.entity.Alumno</class>
-        <class>org.aguzman.hibernateapp.entity.Curso</class>
+        <class>org.aguzman.hibernateapp.entity.Teacher</class>
+        <class>org.aguzman.hibernateapp.entity.Marks</class>
         <exclude-unlisted-classes>true</exclude-unlisted-classes>
         <properties>
             <property name="jakarta.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/ejercicioAlumnosNotas?serverTimezone=America/El_Salvador"/>

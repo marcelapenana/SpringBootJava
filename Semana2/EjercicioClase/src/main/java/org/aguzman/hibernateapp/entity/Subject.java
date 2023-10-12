@@ -1,4 +1,4 @@
-package org.org.aguzman.hibernateapp.entity;
+package org.aguzman.hibernateapp.entity;
 
 import jakarta.persistence.*;
 

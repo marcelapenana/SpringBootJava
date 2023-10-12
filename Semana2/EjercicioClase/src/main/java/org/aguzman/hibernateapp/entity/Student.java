@@ -1,4 +1,4 @@
-package org.org.aguzman.hibernateapp.entity;
+package org.aguzman.hibernateapp.entity;
 
 import jakarta.persistence.*;
 
@@ -20,6 +20,8 @@ public class Student {
 
     @OneToMany(cascade = CascadeType.ALL, orphanRemoval = true, mappedBy = "estudiante")
     private List<Group> grupos;
+
+
 
     public Student() {
        notas=new ArrayList<>();
@@ -81,7 +83,7 @@ public class Student {
 
     //met
 
-    public Student addGrupo(Group grupo){
+/*    public Student addGrupo(Group grupo){
         this.grupos.add(grupo);
        // grupo.setStudent(null);
         return this;
@@ -89,7 +91,7 @@ public class Student {
     public void removeGrupo(Group grupo){
         this.grupos.remove(grupo);
        // grupo.setStudent(null);
-    }
+    }*/
 
     @Override
     public String toString() {
