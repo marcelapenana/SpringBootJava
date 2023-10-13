@@ -4,6 +4,7 @@ import com.springbootweb.springbootweb.models.Usuario;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import java.util.ArrayList;
@@ -32,12 +33,21 @@ public class IndexControllers {
     @RequestMapping("/listar")
     public String listar(Model model){
         //instanciación de  una vez
-        List<Usuario> usuarios=new ArrayList<>();
+        //List<Usuario> usuarios=new ArrayList<>();
         //instanciación de  una vez para agregar usuarios
-        usuarios.add(new Usuario("Marcela", "Peña","marcela@gmail.com"));
+        //usuarios.add(new Usuario("Marcela", "Peña","marcela@gmail.com"));
         model.addAttribute("titulo", "Listado de usuarios");
-        model.addAttribute("usuarios", usuarios);
+        //model.addAttribute("usuarios", usuarios);
         return "listar";
+    }
+    @ModelAttribute("usuarios")
+    public List<Usuario> poblarUsuarios(){
+        List<Usuario> usuarios=new ArrayList<>();
+        usuarios.add(new Usuario("Nombre1", "Apellido1", "correo1"));
+        usuarios.add(new Usuario("Nombre2", "Apellido2", "correo2"));
+        usuarios.add(new Usuario("Nombre3", "Apellido3", "correo3"));
+        usuarios.add(new Usuario("Nombre4", "Apellido4", "correo4"));
+        return  usuarios;
     }
 
 }
