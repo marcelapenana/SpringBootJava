@@ -21,7 +21,7 @@ public class SubjectTeacher {
     private Marks nota;
 
     @ManyToOne
-    @JoinColumn(name="id_nota")
+    @JoinColumn(name="id_grupo")
     private Group grupo;
 
     public SubjectTeacher(Subject materia, Marks nota, Group grupo) {

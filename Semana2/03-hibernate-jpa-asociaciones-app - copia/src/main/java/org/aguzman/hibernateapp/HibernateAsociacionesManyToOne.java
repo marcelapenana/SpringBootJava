@@ -13,6 +13,7 @@ public class HibernateAsociacionesManyToOne {
         try {
             //El objetivo de tablas intermedias romper la relaciones m a m
             em.getTransaction().begin();
+
             Cliente cliente = new Cliente("Cata", "Edu");
             cliente.setFormaPago("credito");
             em.persist(cliente);

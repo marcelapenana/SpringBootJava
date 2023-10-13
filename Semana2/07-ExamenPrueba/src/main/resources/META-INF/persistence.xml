@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <persistence xmlns="https://jakarta.ee/xml/ns/persistence" version="3.0">
     <persistence-unit name="ejemploJPA" transaction-type="RESOURCE_LOCAL">
-        <provider>org.example.jpa.HibernatePersistenceProvider</provider>
-        <class>org.example.entity.Student</class>
+        <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
         <class>org.example.entity.Marks</class>
+        <class>org.example.entity.Student</class>
         <class>org.example.entity.Subject</class>
         <class>org.example.entity.Group</class>
+        <class>org.example.entity.SubjectTeacher</class>
         <class>org.example.entity.Teacher</class>
         <exclude-unlisted-classes>true</exclude-unlisted-classes>
         <properties>
