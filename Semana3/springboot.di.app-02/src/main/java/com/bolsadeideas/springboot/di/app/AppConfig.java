@@ -15,7 +15,7 @@ import java.util.List;
 
 @Configuration
 public class AppConfig {
-    @Bean
+    @Bean("miServicioSimple")
     @Primary
     public IServicio registrarMiServicio(){
         return new MiServicio();
