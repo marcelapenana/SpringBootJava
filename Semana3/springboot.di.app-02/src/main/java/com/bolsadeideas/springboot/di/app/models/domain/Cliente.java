@@ -4,6 +4,9 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 import org.springframework.web.context.annotation.RequestScope;
 
+//componestes son clases y tienen un funcion principal, servira para almacenar propiedades de un objeto
+//ejmp un obj factura necesita información de otro componente
+//Request
 @Component
 @RequestScope
 public class Cliente {
