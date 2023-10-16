@@ -13,6 +13,9 @@ import java.util.List;
 @Component
 @RequestScope
 public class Factura  implements Serializable {
+    // Beanes un objeto administrado por el marco Spring.
+    //Es creado, administrado y administrado por el contenedor Spring.
+    // Los beans se pueden utilizar para encapsular y proporcionar servicios, utilidades y funcionalidades a otros componentes de una aplicación.
 
     //inyeccion de dependencia
     //osc: el servicio del controlador no se instancia si no que con autorride nos permite inyectar y tomar el
@@ -26,10 +29,20 @@ public class Factura  implements Serializable {
     @Autowired
     private Cliente cliente;
     private List<ItemFactura> items;
+    //este metodo se va ejecutar de manera automatica por medio de la notación, tiene que ser vacio
+    //inicializar cualquier tarea
+    //En nuestro bean, debe haber solo un método anotado con @PostConstruct
+    //El método no puede ser estático.
     @PostConstruct
     public void inicializar(){
         cliente.setNombre(cliente.getNombre().concat("").concat("José"));
         descripcion=descripcion.concat("Del cliente: ").concat(cliente.getNombre());
+
+    }
+    @PreDestroy
+    public void destruir(){
+        System.out.println("Factura destruida ".concat(descripcion));
+
 
     }
 
@@ -57,11 +70,5 @@ public class Factura  implements Serializable {
         this.items = items;
     }
 
-    @PreDestroy
-    public void destruir(){
-        System.out.println("Factura destruida ".concat(descripcion));
-
-
-    }
 
 }
