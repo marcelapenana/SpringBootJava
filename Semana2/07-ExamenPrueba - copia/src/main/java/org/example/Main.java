@@ -30,34 +30,19 @@ public class Main {
             nota1.setMateria(materia1);
             em.persist(nota1);
 
-            //creas maestro
             Teacher maestro1=new Teacher("Juan", "Jaramillo");
+            em.persist(maestro1);
+
             SubjectTeacher mateMaestro1=new SubjectTeacher();
             mateMaestro1.setGrupo(grupo1);
             mateMaestro1.setSubject(materia1);
             mateMaestro1.setTeacher(maestro1);
-            //agregas datos a la lista
-            maestro1.add(mateMaestro1);
-            //guardamos maestro
-            em.persist(maestro1);
-
-            Teacher maestro2=new Teacher("Morgan", "Jaramillo");
-            em.persist(maestro2);
+            em.persist(mateMaestro1);
 
             //PRI DATA BASE
             System.out.println(nota1);
 
-            em.getTransaction().commit();
-
-            em.getTransaction().begin();
-            Teacher update=em.find(Teacher.class,1L);
-
-            update.setNombre("Marcela");
-            update.setApellido("Najera");
-            em.merge(update);
-    /*      Teacher t3 = em.find(Teacher.class , 1L);
-             em.remove(t3);*/
-
+            //*******
             em.getTransaction().commit();
         }catch (Exception e){
             em.getTransaction().rollback();

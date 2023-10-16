@@ -8,7 +8,7 @@ import java.util.Objects;
 @Entity
 @Table(name="MateriasMaestros")
 public class SubjectTeacher {
-    //table hija, repetir los regristros de tabla padre
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;

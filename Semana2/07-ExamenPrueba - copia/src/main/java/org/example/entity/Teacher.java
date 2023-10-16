@@ -2,27 +2,20 @@ package org.example.entity;
 
 import jakarta.persistence.*;
 
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Objects;
 
 @Entity
 @Table(name="maestros")
 public class Teacher {
-    //table padre
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String nombre;
     private String apellido;
-    @OneToMany(mappedBy = "teacher", cascade = CascadeType.ALL, orphanRemoval = true)
-    private List<SubjectTeacher> subjectTeachers;
+    
     public Teacher() {
-        subjectTeachers=new ArrayList<>();
-    }
 
-    public void add(SubjectTeacher sub){
-        subjectTeachers.add(sub);
     }
 
     public Teacher(String nombre, String apellido) {

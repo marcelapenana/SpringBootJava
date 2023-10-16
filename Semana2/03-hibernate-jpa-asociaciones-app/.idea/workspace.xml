@@ -4,7 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0b480c54-bab5-441a-8402-6d6ea1902a71" name="Changes" comment="" />
+    <list default="true" id="0b480c54-bab5-441a-8402-6d6ea1902a71" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../springboot-web/src/main/java/com/springbootweb/springbootweb/controllers/EjemploParams.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../04-hibernate-jpa-asociaciones-PreExamen/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../04-hibernate-jpa-asociaciones-PreExamen/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../07-ExamenPrueba/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../07-ExamenPrueba/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../07-ExamenPrueba/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../07-ExamenPrueba/src/main/java/org/example/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../07-ExamenPrueba/src/main/java/org/example/entity/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/../07-ExamenPrueba/src/main/java/org/example/entity/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../07-ExamenPrueba/src/main/java/org/example/entity/SubjectTeacher.java" beforeDir="false" afterPath="$PROJECT_DIR$/../07-ExamenPrueba/src/main/java/org/example/entity/SubjectTeacher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../07-ExamenPrueba/src/main/java/org/example/entity/Teacher.java" beforeDir="false" afterPath="$PROJECT_DIR$/../07-ExamenPrueba/src/main/java/org/example/entity/Teacher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot-web/src/main/java/com/springbootweb/springbootweb/controllers/IndexControllers.java" beforeDir="false" afterPath="$PROJECT_DIR$/../springboot-web/src/main/java/com/springbootweb/springbootweb/controllers/IndexControllers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot-web/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../springboot-web/src/main/resources/templates/index.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,7 +28,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
@@ -34,7 +44,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "C:/Users/cdsja/IdeaProjects/Semana2/05-hibernate-jpa-asociaciones-app",
+    "last_opened_file_path": "C:/Users/cdsja/IdeaProjects/Semana2/03-hibernate-jpa-asociaciones-app - copia",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
