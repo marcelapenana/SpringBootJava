@@ -4,8 +4,9 @@ import org.springframework.stereotype.Component;
 
 //@Component("MiServicioCompleto")
 public class MiServicioComplejo implements IServicio{
+    //implementa el metodo
     @Override
     public String operacion() {
-        return "Proceso import complicado";
+        return "ejecutando algún proceso importante complicado...";
     }
 }

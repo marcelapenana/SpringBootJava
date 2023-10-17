@@ -23,27 +23,30 @@ public class Factura  implements Serializable {
     //sau: ya no es necesario instanciar las clases, con component sprin lo hace por nosotros
     //melga: La notacion autowired nos permite automaticamente podemos acceder a los objetos automaticamente por medio de spring
     //
-    private static final long serialVersionUID =9460043571281469L;
-    @Value("${factura.descripcion}")
-    private String descripcion;
-    @Autowired
-    private Cliente cliente;
-    private List<ItemFactura> items;
     //este metodo se va ejecutar de manera automatica por medio de la notación, tiene que ser vacio
     //inicializar cualquier tarea
     //En nuestro bean, debe haber solo un método anotado con @PostConstruct
     //El método no puede ser estático.
+    private static final long serialVersionUID = 946004357128146951L;
+
+    @Value("${factura.descripcion}")
+    private String descripcion;
+
+    @Autowired
+    private Cliente cliente;
+
+    @Autowired
+    private List<ItemFactura> items;
+
     @PostConstruct
-    public void inicializar(){
-        cliente.setNombre(cliente.getNombre().concat("").concat("José"));
-        descripcion=descripcion.concat("Del cliente: ").concat(cliente.getNombre());
-
+    public void inicializar() {
+        cliente.setNombre(cliente.getNombre().concat(" ").concat("José"));
+        descripcion = descripcion.concat(" del cliente: ").concat(cliente.getNombre());
     }
+
     @PreDestroy
-    public void destruir(){
-        System.out.println("Factura destruida ".concat(descripcion));
-
-
+    public void destruir() {
+        System.out.println("Factura destruida: ".concat(descripcion));
     }
 
     public String getDescripcion() {

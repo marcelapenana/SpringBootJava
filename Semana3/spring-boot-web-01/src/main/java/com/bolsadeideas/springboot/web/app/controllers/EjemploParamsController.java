@@ -17,6 +17,7 @@ public class EjemploParamsController {
 		return "params/index";
 	}
 
+	//imprime un valor por defecto y si no s ele pone da error
 	@GetMapping("/string")
 	public String param(@RequestParam(name = "texto", required = false, defaultValue = "algún valor...") String texto,
 			Model model) {
@@ -29,7 +30,7 @@ public class EjemploParamsController {
 		model.addAttribute("resultado", "El saludo enviado es: '" + saludo + "' y el número es '" + numero + "'");
 		return "params/ver";
 	}
-
+//pior medio de HttpServletRequest obtenenmos los parametros lo mismo que hacemos con parametros
 	@GetMapping("/mix-params-request")
 	public String param(HttpServletRequest request, Model model) {
 		String saludo = request.getParameter("saludo");

@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
-@RequestMapping("/variables")
+@RequestMapping("/variables")//igual al nombre d ela carpeta
 public class EjemploVariablesRutaController {
 	
 	@GetMapping("/")
@@ -15,8 +15,10 @@ public class EjemploVariablesRutaController {
 		model.addAttribute("titulo", "Enviar parámetros de la ruta (@PathVariable)");
 		return "variables/index";
 	}
-	
-	@GetMapping("/string/{texto}")
+	//PathVariable sirven para lo mismo enviar un valor o datos escalares al controlador
+	// mediante url
+	//ruta con variable {texto}
+	@GetMapping("/string/{texto}")//name getMapping y pathVariable debe ser igual para omotir ...
     public String variables(@PathVariable String texto, Model model) {
 		model.addAttribute("titulo", "Recibir parámetros de la ruta (@PathVariable)");
 		model.addAttribute("resultado", "El texto enviado en la ruta es: " + texto);

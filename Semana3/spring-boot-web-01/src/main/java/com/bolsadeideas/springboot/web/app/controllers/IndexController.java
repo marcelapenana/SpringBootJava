@@ -15,7 +15,7 @@ import com.bolsadeideas.springboot.web.app.models.Usuario;
 @Controller
 @RequestMapping("/app")
 public class IndexController {
-
+    //inyeccion de dependencias aplicados al texto que se pueden guardar en propities
 	@Value("${texto.indexcontroller.index.titulo}")
 	private String textoIndex;
 

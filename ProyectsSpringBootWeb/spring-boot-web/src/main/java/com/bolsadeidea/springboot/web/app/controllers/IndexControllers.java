@@ -7,6 +7,9 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
+import com.bolsadeidea.springboot.web.appmodels.MiClase;
+import com.bolsadeidea.springboot.web.appmodels.Usuario;
+
 
 
 @Controller
@@ -41,5 +44,25 @@ public class IndexControllers {
 	}
 	
 	//Model es una interfaz que contiene met abstractos y se pasa por agrgumento para pasar datos a la vista
+	@RequestMapping("/perfil")
+	public String perfil(Model model) {
+		Usuario usuario=new Usuario();
+		usuario.setNombre("Marcela");
+		usuario.setApellido("Peña");
+		model.addAttribute("usuario", usuario);
+		model.addAttribute("titulo", "perfil de ususario");
+		return "perfil";
+	}
+	
+	@RequestMapping("pruebam")
+	public String pruebam(Model model) {
+	    MiClase miclase=new MiClase();
+	    miclase.setNombre("Esta es la clase");
+	    miclase.setDescripcion("Descripcion de la clase ueu");
+		model.addAttribute("miclase", miclase);
+	    model.addAttribute("titulo", "Probando por mi cuenta");
+		return "pruebam";
+	}
+	
 	
 }

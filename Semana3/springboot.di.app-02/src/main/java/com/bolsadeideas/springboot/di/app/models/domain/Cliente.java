@@ -10,8 +10,10 @@ import org.springframework.web.context.annotation.RequestScope;
 @Component
 @RequestScope
 public class Cliente {
+    //inyectamos con value y set and get accedemos
     @Value("${cliente.nombre}")
     private String nombre;
+
     @Value("${cliente.apellido}")
     private String apellido;
 

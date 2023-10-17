@@ -1,17 +1,17 @@
 {"properties": [
   {
-    "name": "texto.indexcontroller.listar.titulo",
+    "name": "cliente.nombre",
     "type": "java.lang.String",
-    "description": "A description for 'texto.indexcontroller.listar.titulo'"
+    "description": "A description for 'cliente.nombre'"
   },
   {
-    "name": "texto.indexcontroller.perfil.titulo",
+    "name": "cliente.apellido",
     "type": "java.lang.String",
-    "description": "A description for 'texto.indexcontroller.perfil.titulo'"
+    "description": "A description for 'cliente.apellido'"
   },
   {
-    "name": "texto.indexcontroller.index.titulo",
+    "name": "factura.descripcion",
     "type": "java.lang.String",
-    "description": "A description for 'texto.indexcontroller.index.titulo'"
+    "description": "A description for 'factura.descripcion'"
   }
 ]}
