@@ -14,6 +14,7 @@ public class MiServicio implements IServicio {
     //se pueden tener muchos controladores que tengan la
     //clase miservicio
     //implementamos el metodo y override dice que es implementacion de un padre y lo estamos sobreescribiendo
+    //tenemos que crear un contructor vacio
     @Override
     public String operacion() {
         return "ejecutando algún proceso importante simple ...";
