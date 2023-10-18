@@ -1,16 +1,22 @@
-package com.bolsadeideas.springboot.di.app.models.domain;
+package com.springbootexamen.com.examen2.models.domain;
 
 public class Producto {
-    //la capa domain tiene que ver con la bd y tiene comunicación con la vista
-    //component permite interactuar con otro componente y
-    //producto se usara como
-
+    private String categoria;
     private String nombre;
     private Integer precio;
 
-    public Producto(String nombre, Integer precio) {
+    public Producto(String categoria, String nombre, Integer precio) {
+        this.categoria = categoria;
         this.nombre = nombre;
         this.precio = precio;
+    }
+
+    public String getCategoria() {
+        return categoria;
+    }
+
+    public void setCategoria(String categoria) {
+        this.categoria = categoria;
     }
 
     public String getNombre() {
