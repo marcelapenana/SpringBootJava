@@ -24,12 +24,12 @@ public class Factura implements Serializable {
     @Autowired
     private List<ItemFactura> items;
 
-    @PostConstruct
+    /*@PostConstruct
     public void inicializar() {
         cliente.setNombre(cliente.getNombre().concat(" ").concat("José"));
         descripcion = descripcion.concat(" del cliente: ").concat(cliente.getNombre());
     }
-
+*/
     @PreDestroy
     public void destruir() {
         System.out.println("Factura destruida: ".concat(descripcion));
