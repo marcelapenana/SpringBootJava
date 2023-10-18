@@ -1,5 +1,7 @@
 package com.springbootexamen.com.examen2.models.domain;
 
+import com.springbootexamen.com.examen2.AppConfig;
+
 public class ItemFactura {
     private Producto producto;
     private Integer cantidad;
@@ -28,4 +30,10 @@ public class ItemFactura {
     public Integer calcularImporte() {
         return cantidad * producto.getPrecio();
     }
+
+
+
+
+
+
 }
