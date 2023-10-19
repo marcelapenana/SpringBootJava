@@ -1,13 +1,13 @@
-package com.formulariospringboot03;
+package com.bolsadeideas.springboot;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class FormularioSpringBoot03Application {
+public class Application {
 
 	public static void main(String[] args) {
-		SpringApplication.run(FormularioSpringBoot03Application.class, args);
+		SpringApplication.run(Application.class, args);
 	}
 
 }

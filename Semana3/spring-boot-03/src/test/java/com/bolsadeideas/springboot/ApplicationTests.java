@@ -1,10 +1,10 @@
-package com.formulariospringboot03;
+package com.bolsadeideas.springboot;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class FormularioSpringBoot03ApplicationTests {
+class ApplicationTests {
 
 	@Test
 	void contextLoads() {
