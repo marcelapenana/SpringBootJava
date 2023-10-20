@@ -1,10 +1,11 @@
 package com.springbootwebb.models.domain;
 
 import com.springbootwebb.validation.IdentificadorRegex;
-import jakarta.validation.constraints.Email;
-import jakarta.validation.constraints.NotBlank;
-import jakarta.validation.constraints.NotEmpty;
-import jakarta.validation.constraints.Size;
+import com.springbootwebb.validation.Requerido;
+import jakarta.validation.constraints.*;
+
+import java.util.Date;
+
 //en la prueba 1 y 2 sin notaciones en este espacio
 public class Usuario {
     //@Pattern(regexp = "[0-9]{2}[.][\\d]{3}[.][\\d]{3}[-][A-Z]{1}")
@@ -14,7 +15,8 @@ public class Usuario {
     //@NotEmpty(message = "el nombre no puede ser vacio")
     private String nombre;
 
-    @NotEmpty
+    //@NotEmpty
+    @Requerido
     private String apellido;
 
     @NotBlank
@@ -24,9 +26,19 @@ public class Usuario {
     @NotEmpty
     private String password;
 
-    @NotEmpty
+    @Requerido
     @Email(message = "correo con formato incorrecto")
     private String email;
+
+    @NotNull
+    @Min(5)
+    @Max(5000)
+    private Integer cuenta;
+
+    @NotNull
+    @Past
+    //@DateTimeFormat(pattern = "yyyy-MM-dd")
+    private Date fechaNacimiento;
 
     public String getUsername() {
         return username;
@@ -75,6 +87,24 @@ public class Usuario {
     public void setIdentificador(String identificador) {
         this.identificador = identificador;
     }
+
+    public Integer getCuenta() {
+        return cuenta;
+    }
+
+    public void setCuenta(Integer cuenta) {
+        this.cuenta = cuenta;
+    }
+
+    public Date getFechaNacimiento() {
+        return fechaNacimiento;
+    }
+
+    public void setFechaNacimiento(Date fechaNacimiento) {
+        this.fechaNacimiento = fechaNacimiento;
+    }
+
+
 }
 
 

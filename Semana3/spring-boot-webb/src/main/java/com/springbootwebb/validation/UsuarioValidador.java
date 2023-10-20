@@ -13,18 +13,16 @@ public class UsuarioValidador implements Validator {
     public boolean supports(Class<?> clazz) {
         return Usuario.class.isAssignableFrom(clazz);
     }
-    //el metodo recibe un objeto de tipo target y object
 
-    //atributo del objeto usuario
     @Override
     public void validate(Object target, Errors errors) {
-        Usuario usuario = (Usuario)target;
+        // Usuario usuario = (Usuario)target;
 
         ValidationUtils.rejectIfEmptyOrWhitespace(errors, "nombre", "requerido.usuario.nombre");
 
-        if(!usuario.getIdentificador().matches("[0-9]{3}[.][\\d]{3}[.][\\d]{3}[-][A-Z]{1}")) {
-            errors.rejectValue("identificador", "pattern.usuario.identificador");
-        }//definimos el patron
+		/* if(!usuario.getIdentificador().matches("[0-9]{2}[.][\\d]{3}[.][\\d]{3}[-][A-Z]{1}")) {
+			errors.rejectValue("identificador", "pattern.usuario.identificador");
+		} */
 
     }
 

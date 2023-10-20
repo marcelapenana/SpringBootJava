@@ -1,9 +1,11 @@
 package com.springbootwebb.controllers;
 
+import com.springbootwebb.editors.NombreMayusculaEditor;
 import com.springbootwebb.models.domain.Usuario;
 import com.springbootwebb.validation.UsuarioValidador;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.propertyeditors.CustomDateEditor;
 import org.springframework.boot.Banner;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -12,6 +14,8 @@ import org.springframework.web.bind.WebDataBinder;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.bind.support.SessionStatus;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 /* MVC, debe saber que el controlador se utiliza para procesar la solicitud web y representar la respuesta a la Vista.
@@ -21,10 +25,16 @@ import java.util.Map;
 public class FormController {//declara los atributos de sesión utilizados por un controlador específico.
     @Autowired
     private UsuarioValidador validador;
+
     @InitBinder
     public void initBinder(WebDataBinder binder) {
         binder.addValidators(validador);
+        SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
+        dateFormat.setLenient(false);
+        binder.registerCustomEditor(Date.class, "fechaNacimiento", new CustomDateEditor(dateFormat, true));
 
+        binder.registerCustomEditor(String.class, "nombre", new NombreMayusculaEditor());
+        binder.registerCustomEditor(String.class, "apellido", new NombreMayusculaEditor());
     }
 
     @GetMapping("/form")
@@ -37,19 +47,23 @@ public class FormController {//declara los atributos de sesión utilizados por u
         model.addAttribute("usuario", usuario);
         return "form";
     }
+
     @PostMapping("/form")
     public String procesar(@Valid Usuario usuario, BindingResult result, Model model, SessionStatus status) {
+
         // validador.validate(usuario, result);
+
         model.addAttribute("titulo", "Resultado form");
+
         if(result.hasErrors()) {
 
             return "form";
         }
+
         model.addAttribute("usuario", usuario);
         status.setComplete();
         return "resultado";
     }
-
 }
 
     //uso para prueba 2

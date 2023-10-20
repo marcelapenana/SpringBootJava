@@ -12,11 +12,12 @@ import static java.lang.annotation.RetentionPolicy.RUNTIME;
 //notacion es propiedad  va estar relacionada con la clase identificador regex validador (enlazandola)
 @Constraint(validatedBy = IdentificadorRegexValidador.class)
 @Retention(RUNTIME)//como se va ejecutar
-@Target({FIELD, METHOD})//ruta de donde se implementara
+@Target({ FIELD, METHOD })//ruta donde se implementara
 public @interface IdentificadorRegex {
-    String messaje()default "Identificador invalido";
+    String message() default "Identificador inválido";
 
-    Class<?>[] groups() default {};
+    Class<?>[] groups() default { };
 
-    Class<? extends Payload> [] payload() default {};
+    Class<? extends Payload>[] payload() default { };
+
 }

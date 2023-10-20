@@ -6,7 +6,7 @@
 </head>
 <body>
 <h3 th:text="${titulo}"></h3>
-<!--Ruta que esta justo en el controller form -->
+
 <form th:action="@{/form}" th:object="${usuario}" method="post">
 
     <div>
@@ -31,7 +31,6 @@
         </div>
         <div th:if="${#fields.hasErrors('apellido')}" th:errors="*{apellido}"></div>
     </div>
-
     <div>
         <label for="username">Username</label>
         <div>
@@ -46,13 +45,28 @@
         </div>
         <div th:if="${#fields.hasErrors('password')}" th:errors="*{password}"></div>
     </div>
-
     <div>
         <label for="email">Correo</label>
         <div>
             <input type="text" id="email" th:field="*{email}">
         </div>
         <div th:if="${#fields.hasErrors('email')}" th:errors="*{email}"></div>
+    </div>
+
+    <div>
+        <label for="cuenta">Cuenta</label>
+        <div>
+            <input type="number" id="cuenta" th:field="*{cuenta}">
+        </div>
+        <div th:if="${#fields.hasErrors('cuenta')}" th:errors="*{cuenta}"></div>
+    </div>
+
+    <div>
+        <label for="fechaNacimiento">Fecha Nacimiento</label>
+        <div>
+            <input type="date" id="fechaNacimiento" th:field="*{fechaNacimiento}" placeholder="yyyy-MM-dd">
+        </div>
+        <div th:if="${#fields.hasErrors('fechaNacimiento')}" th:errors="*{fechaNacimiento}"></div>
     </div>
 
     <div>
