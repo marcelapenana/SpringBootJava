@@ -41,16 +41,12 @@ public class FormController {
 	
 	@PostMapping("/form")
 	public String procesar(@Valid Usuario usuario, BindingResult result, Model model, SessionStatus status) {
-		
 		// validador.validate(usuario, result);
-		
 		model.addAttribute("titulo", "Resultado form");
-		
 		if(result.hasErrors()) {
 			
 			return "form";
 		}
-		
 		model.addAttribute("usuario", usuario);
         status.setComplete();
 		return "resultado";

@@ -4,16 +4,60 @@
     <meta charset="UTF-8">
     <title th:text="${titulo}"></title>
 </head>
-<body><!--titulo del controlador en cada metodo-->
+<body>
 <h3 th:text="${titulo}"></h3>
 
-<ul><!--Entre  clases varia lo que esta entre corchetes
-                  {clase.propiedad}-->
+<ul>
     <li th:text="${usuario.nombre}"></li>
     <li th:text="${usuario.apellido}"></li>
     <li th:text="${usuario.username}"></li>
     <li th:text="${usuario.password}"></li>
     <li th:text="${usuario.email}"></li>
+    <li th:text="${usuario.identificador}"></li>
 </ul>
 </body>
 </html>
+<!--titulo del controlador en cada metodo-->
+<!--Entre  clases varia lo que esta entre corchetes
+                  {clase.propiedad}
+
+Primera prueba
+
+    <li th:text="${usuario.username}"></li>
+    <li th:text="${usuario.password}"></li>
+    <li th:text="${usuario.email}"></li>
+
+
+Segunda prueba
+
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title th:text="${titulo}"></title>
+</head>
+<body>
+<h3 th:text="${titulo}"></h3>
+
+<ul>
+    <li th:text="${usuario.nombre}"></li>
+    <li th:text="${usuario.apellido}"></li>
+    <li th:text="${usuario.username}"></li>
+    <li th:text="${usuario.password}"></li>
+    <li th:text="${usuario.email}"></li>
+    <li th:text="${usuario.identificador}"></li>
+</ul>
+</body>
+</html>
+
+
+segunda prueba de messages.propierties, e la primera prueba no lleva
+
+NotEmpty=el campo es requerido
+NotEmpty.usuario.nombre=el campo nombre no puede ser vacÃ­o
+NotEmpty.usuario.username=el username es obligatorio
+Email.usuario.email=el formato del correo es invÃ¡lido, falta el @
+pattern.usuario.identificador=formato de la expresiÃ³n regular incorrecto
+requerido.usuario.nombre=el campo nombre es requerido
+
+-->

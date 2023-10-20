@@ -19,26 +19,30 @@ import java.util.Map;
 @Controller
 @SessionAttributes("usuario")//Se usa apartir de prueba 2--almacenar atributos del modelo en la sesión del servlet HTTP entre solicitudes
 public class FormController {//declara los atributos de sesión utilizados por un controlador específico.
-    @Autowired//habilitar la inyección automática de dependencias
-    private UsuarioValidador validador;//Permite que el contenedor Spring proporcione una instancia de una dependencia requerida cuando se crea un bean
-    @InitBinder//recortará los valores a Nulos si solo hay espacios en blanco, considerando la bd
-    public void initBinder(WebDataBinder binder){
+    @Autowired
+    private UsuarioValidador validador;
+    @InitBinder
+    public void initBinder(WebDataBinder binder) {
         binder.addValidators(validador);
+
     }
-    @GetMapping("/form")//Mostrar los datos
+
+    @GetMapping("/form")
     public String form(Model model) {
         Usuario usuario = new Usuario();
         usuario.setNombre("John");
         usuario.setApellido("Doe");
-        usuario.setIdentificador("123.456.789-k");//Como no puede estar vacio enviamos propiedades
-        model.addAttribute("titulo", "Formulario Usuarios");
+        usuario.setIdentificador("123.456.789-K");
+        model.addAttribute("titulo", "Formulario usuarios");
         model.addAttribute("usuario", usuario);
         return "form";
     }
-    @PostMapping("/form")//pasar datos
-    public String procesar(@Valid Usuario usuario, BindingResult result, Model model, SessionStatus status){
-        model.addAttribute("titulo", " Resultado form");
-        if(result.hasErrors()){
+    @PostMapping("/form")
+    public String procesar(@Valid Usuario usuario, BindingResult result, Model model, SessionStatus status) {
+        // validador.validate(usuario, result);
+        model.addAttribute("titulo", "Resultado form");
+        if(result.hasErrors()) {
+
             return "form";
         }
         model.addAttribute("usuario", usuario);
@@ -46,8 +50,48 @@ public class FormController {//declara los atributos de sesión utilizados por u
         return "resultado";
     }
 
+}
+
+    //uso para prueba 2
+
+    /*
+     @Autowired//habilitar la inyección automática de dependencias
+    private UsuarioValidador validador;//Permite que el contenedor Spring proporcione una instancia de una dependencia requerida cuando se crea un bean
+    @InitBinder//sirve para datos de formulario
+    public void initBinder(WebDataBinder binder) {
+        binder.addValidators(validador);
+        //como argumento la propiedad validador y
+    }//recortará los valores a Nulos si solo hay espacios en blanco, considerando la bd
+
+    //Mostrar los datos
+    @GetMapping("/form")
+    public String form(Model model) {
+        Usuario usuario = new Usuario();
+        usuario.setNombre("John");
+        usuario.setApellido("Doe");
+        usuario.setIdentificador("123.456.789-K");
+        model.addAttribute("titulo", "Formulario usuarios");
+        model.addAttribute("usuario", usuario);
+        return "form";
+    }
+    @PostMapping("/form")
+    public String procesar(@Valid Usuario usuario, BindingResult result, Model model, SessionStatus status) {
+        // validador.validate(usuario, result);
+        model.addAttribute("titulo", "Resultado form");
+        if(result.hasErrors()) {
+
+            return "form";
+        }
+        model.addAttribute("usuario", usuario);
+        status.setComplete();
+        return "resultado";
+    }
+
+}
+    */
 
     //Uso para prueba 1
+
     /* @GetMapping("/form")
     public String form(Model model){
         Usuario usuario=new Usuario();
@@ -70,4 +114,4 @@ public class FormController {//declara los atributos de sesión utilizados por u
         model.addAttribute("usuario", usuario);
         return "resultado";
     }*/
-}
+
