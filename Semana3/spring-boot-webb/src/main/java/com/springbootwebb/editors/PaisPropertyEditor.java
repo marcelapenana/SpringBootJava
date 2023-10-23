@@ -17,7 +17,7 @@ public class PaisPropertyEditor extends PropertyEditorSupport {
 
 		try {
 			Integer id = Integer.parseInt(idString);
-			this.setValue(service.obtenerPorId(id));
+			this.setValue(service.obtenerPorId(id));//seteamos el valor
 		} catch (NumberFormatException e) {
 			setValue(null);
 		}
