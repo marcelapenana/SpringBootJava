@@ -9,6 +9,7 @@ import java.lang.annotation.Target;
 import static java.lang.annotation.ElementType.FIELD;
 import static java.lang.annotation.ElementType.METHOD;
 import static java.lang.annotation.RetentionPolicy.RUNTIME;
+//a partir de prueba 3
 //notacion es propiedad  va estar relacionada con la clase identificador regex validador (enlazandola)
 @Constraint(validatedBy = IdentificadorRegexValidador.class)
 @Retention(RUNTIME)//como se va ejecutar
@@ -21,3 +22,18 @@ public @interface IdentificadorRegex {
     Class<? extends Payload>[] payload() default { };
 
 }
+//prueb 3
+
+/*
+@Constraint(validatedBy = IdentificadorRegexValidador.class)
+@Retention(RUNTIME)//como se va ejecutar
+@Target({ FIELD, METHOD })//ruta donde se implementara
+public @interface IdentificadorRegex {
+    String message() default "Identificador inválido";
+
+    Class<?>[] groups() default { };
+
+    Class<? extends Payload>[] payload() default { };
+
+}
+*/

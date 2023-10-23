@@ -7,7 +7,7 @@ public class IdentificadorRegexValidador implements ConstraintValidator<Identifi
 
 	@Override
 	public boolean isValid(String value, ConstraintValidatorContext context) {
-		if(value.matches("[0-9]{2}[.][\\d]{3}[.][\\d]{3}[-][A-Z]{1}")) {
+		if(value.matches("[0-9]{3}[.][\\d]{3}[.][\\d]{3}[-][A-Z]{1}")) {
 			return true;
 		}
 		return false;

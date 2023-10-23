@@ -100,8 +100,9 @@ public class FormController {
 
 		return roles;
 	}
-	
-	@ModelAttribute("paises")
+
+	//creo la lista primero al iniciar el paso 3
+	@ModelAttribute("paises")//define que paises sera un atributo
 	public List<String> paises() {
 		return Arrays.asList("España", "México", "Chile", "Argentina", "Perú", "Colombia", "Venezuela");
 	}

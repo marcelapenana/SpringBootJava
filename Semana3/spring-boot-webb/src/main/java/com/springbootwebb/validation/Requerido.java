@@ -9,7 +9,7 @@ import java.lang.annotation.Target;
 import static java.lang.annotation.ElementType.FIELD;
 import static java.lang.annotation.ElementType.METHOD;
 import static java.lang.annotation.RetentionPolicy.RUNTIME;
-
+//a partir de prueba 3
 @Constraint(validatedBy = RequeridoValidador.class)
 @Retention(RUNTIME)
 @Target({ FIELD, METHOD })
@@ -20,3 +20,17 @@ public @interface Requerido {
 
     Class<? extends Payload>[] payload() default { };
 }
+
+//prueba 3
+
+/*@Constraint(validatedBy = RequeridoValidador.class)
+@Retention(RUNTIME)
+@Target({ FIELD, METHOD })
+public @interface Requerido {
+    String message() default "el campo es requerido - usando anotaciones";
+
+    Class<?>[] groups() default { };
+
+    Class<? extends Payload>[] payload() default { };
+}*/
+
