@@ -213,7 +213,7 @@ public class FormController {//declara los atributos de sesión utilizados por u
 
         if (result.hasErrors()){
             Map<String, String> errores=new HashMap<>();//condicion por id y objeto
-            result.getFieldErrors().forEach(err ->{ {//foreach que ejecuta una funcion por cada uno de los campos
+            result.getFieldErrors().forEach(err ->{ //foreach que ejecuta una funcion por cada uno de los campos
                 errores.put(err.getField(), "El campo".concat(err.getField()).concat("").concat(err.getDefaultMessage()));
             });//si hay error lo alamacena y lo muestra
             model.addAttribute("error", errores);//trasladamos como una lista de errores
