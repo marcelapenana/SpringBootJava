@@ -1,7 +1,7 @@
 package com.example.demo.controllers;
 
 import com.example.demo.models.domain.Cliente;
-import com.example.demo.validation.UsuarioValidador;
+import com.example.demo.validation.ClienteValidador;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -21,7 +21,7 @@ import javax.validation.Valid;
 public class FormController {
 //mostrar los datos
 @Autowired//habilitar la inyección automática de dependencias
-private UsuarioValidador validador;//Permite que el contenedor Spring proporcione una instancia de una dependencia requerida cuando se crea un bean
+private ClienteValidador validador;//Permite que el contenedor Spring proporcione una instancia de una dependencia requerida cuando se crea un bean
     @InitBinder//sirve para datos de formulario
     public void initBinder(WebDataBinder binder) {
         binder.addValidators(validador);

@@ -6,7 +6,7 @@ import org.springframework.validation.Errors;
 import org.springframework.validation.ValidationUtils;
 import org.springframework.validation.Validator;
 @Component
-public class UsuarioValidador implements Validator {
+public class ClienteValidador implements Validator {
     @Override
     public boolean supports(Class<?> clazz) {
         return Cliente.class.isAssignableFrom(clazz);
@@ -14,13 +14,11 @@ public class UsuarioValidador implements Validator {
 
     @Override
     public void validate(Object target, Errors errors) {
-        Cliente cliente = (Cliente) target;
+        // Usuario usuario = (Usuario)target;
 
-        ValidationUtils.rejectIfEmptyOrWhitespace(errors, "nombre", "requerido.cliente.nombre");
+        ValidationUtils.rejectIfEmptyOrWhitespace(errors, "nombre", "requerido.usuario.nombre");
 
-        if(!cliente.getIdentificador().matches("[0-9]{3}[.][\\d]{3}[.][\\d]{3}[-][A-Z]{1}")) {
-            errors.rejectValue("identificador", "pattern.cliente.identificador");
-        }//definimos el patron
-
+		/* if(!usuario.getIdentificador().matches("[0-9]{2}[.][\\d]{3}[.][\\d]{3}[-][A-Z]{1}")) {
+			errors.rejectValue("identificador", "pattern.usuario.identificador");*/
     }
 }

@@ -16,18 +16,13 @@ public class ClienteDaoImpl implements IClienteDao {
 	@PersistenceContext
 	private EntityManager em;
 
-	@SuppressWarnings("unchecked")
+
+	@SuppressWarnings("unchecked")//pásar por alto errores
 	@Transactional(readOnly = true)
 	@Override
 	public List<Cliente> findAll() {
 		// TODO Auto-generated method stub
 		return em.createQuery("from Cliente").getResultList();
-	}
-
-	@Override
-	@Transactional(readOnly = true)
-	public Cliente findOne(Long id) {
-		return em.find(Cliente.class, id);
 	}
 
 	@Override
@@ -39,6 +34,13 @@ public class ClienteDaoImpl implements IClienteDao {
 			em.persist(cliente);
 		}
 	}
+
+	@Override
+	@Transactional(readOnly = true)
+	public Cliente findOne(Long id) {
+		return em.find(Cliente.class, id);
+	}
+
 
 	@Override
 	@Transactional

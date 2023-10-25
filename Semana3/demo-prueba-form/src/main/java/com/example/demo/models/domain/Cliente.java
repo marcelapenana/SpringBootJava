@@ -7,7 +7,7 @@ import javax.validation.constraints.Size;
 public class Cliente {
 
     //@Pattern(regexp = "[0-9]{2}[.][\\d]{3}[.][\\d]{3}[-][A-Z]{1}")
-    @IdentificadorRegex
+    //@IdentificadorRegex
     private String identificador;
 
     //@NotEmpty(message = "el nombre no puede ser vacio")
