@@ -1,6 +1,7 @@
 package com.bolsadeideas.springboot.app.controllers;
 
 import java.io.IOException;
+import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.Map;
@@ -30,6 +31,19 @@ public class ClienteController {
 
 	@Autowired
 	private IClienteService clienteService;
+
+	@GetMapping(value = "/ver/{id}")
+	public String ver(@RequestParam(value="id") Long id, Map<String, Object> model,
+					  RedirectAttributes flash){
+		Cliente cliente=clienteService.findOne(id);
+		if (cliente==null){
+			flash.addFlashAttribute("error", "el cliente no existe en la base de datos");
+			return "redirect:/listar";
+		}
+		model.put("cliente", cliente);
+		model.put("titulo", "Detalle de cliente"+cliente.getNombre());
+		return "ver";
+	}
 
 	@RequestMapping(value = "/listar", method = RequestMethod.GET)
 	public String listar(@RequestParam(name = "page", defaultValue = "0") int page, Model model) {
@@ -87,7 +101,11 @@ public class ClienteController {
 			String rootPath=directorioRecursos.toFile().getAbsolutePath();
 			try{
 				byte[] bytes= foto.getBytes();
-				Path rutaCompleta=Paths
+				Path rutaCompleta=Paths.get(rootPath+"//"+foto.getOriginalFilename());
+				Files.write(rutaCompleta,bytes);
+				flash.addFlashAttribute("info", "Has subido la foto"+
+						foto.getOriginalFilename()+"'");
+				cliente.setFoto(foto.getOriginalFilename());
 
 			}catch (IOException e){
 				e.printStackTrace();			}
