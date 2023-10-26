@@ -33,10 +33,10 @@ public class ClienteController {
 	private IClienteService clienteService;
 
 	@GetMapping(value = "/ver/{id}")
-	public String ver(@RequestParam(value="id") Long id, Map<String, Object> model,
+	public String ver(@PathVariable(value="id") Long id, Map<String, Object> model,
 					  RedirectAttributes flash){
-		Cliente cliente=clienteService.findOne(id);
-		if (cliente==null){
+		Cliente cliente= clienteService.findOne(id);
+		if (cliente == null){
 			flash.addFlashAttribute("error", "el cliente no existe en la base de datos");
 			return "redirect:/listar";
 		}
