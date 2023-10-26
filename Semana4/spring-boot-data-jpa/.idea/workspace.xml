@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="a9bbc191-6b0a-4b71-8c9a-23173a8eaf29" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../spring-boot-data-jpa - 1/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-data-jpa - 1/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-data-jpa - 1/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-data-jpa - 1/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-data-jpa - 1/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-data-jpa - 1/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-data-jpa - 1/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-data-jpa - 1/src/main/java/com/bolsadeideas/springboot/app/SpringBootDataJpaApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-data-jpa - 1/src/main/java/com/bolsadeideas/springboot/app/controllers/ClienteController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-data-jpa - 1/src/main/java/com/bolsadeideas/springboot/app/models/dao/IClienteDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-data-jpa - 1/src/main/java/com/bolsadeideas/springboot/app/models/entity/Cliente.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-data-jpa - 1/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-data-jpa - 1/src/main/resources/import.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-data-jpa - 1/src/main/resources/messages.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-data-jpa - 1/src/main/resources/templates/form.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-data-jpa - 1/src/main/resources/templates/layout/layaout.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-data-jpa - 1/src/main/resources/templates/listar.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-data-jpa - 1/src/test/java/com/bolsadeideas/springboot/app/SpringBootDataJpaApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-data-jpa-layout/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-data-jpa-layout/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-data-jpa-layout/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-data-jpa-layout/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-data-jpa-layout/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-data-jpa-layout/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-data-jpa-layout/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-data-jpa-layout/src/main/java/com/bolsadeideas/springboot/app/SpringBootDataJpaApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-data-jpa-layout/src/main/java/com/bolsadeideas/springboot/app/controllers/ClienteController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-data-jpa-layout/src/main/java/com/bolsadeideas/springboot/app/models/dao/IClienteDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-data-jpa-layout/src/main/java/com/bolsadeideas/springboot/app/models/entity/Cliente.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-data-jpa-layout/src/main/java/com/bolsadeideas/springboot/app/models/service/ClienteServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-data-jpa-layout/src/main/java/com/bolsadeideas/springboot/app/models/service/IClienteService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-data-jpa-layout/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-data-jpa-layout/src/main/resources/import.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-data-jpa-layout/src/main/resources/messages.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-data-jpa-layout/src/main/resources/static/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-data-jpa-layout/src/main/resources/static/images/spring.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-data-jpa-layout/src/main/resources/static/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-data-jpa-layout/src/main/resources/static/js/jquery-3.3.1.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-data-jpa-layout/src/main/resources/static/js/popper.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-data-jpa-layout/src/main/resources/templates/form.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-data-jpa-layout/src/main/resources/templates/layout/layout.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-data-jpa-layout/src/main/resources/templates/listar.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-data-jpa-layout/src/test/java/com/bolsadeideas/springboot/app/SpringBootDataJpaApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ProyectsSpringBootWeb/.metadata/.log" beforeDir="false" afterPath="$PROJECT_DIR$/../../ProyectsSpringBootWeb/.metadata/.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ProyectsSpringBootWeb/.metadata/.plugins/org.eclipse.core.resources/.history/e5/4027638f446c001e1e61f07588832de0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ProyectsSpringBootWeb/.metadata/.plugins/org.eclipse.core.resources/.safetable/org.eclipse.core.resources" beforeDir="false" afterPath="$PROJECT_DIR$/../../ProyectsSpringBootWeb/.metadata/.plugins/org.eclipse.core.resources/.safetable/org.eclipse.core.resources" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ProyectsSpringBootWeb/.metadata/.plugins/org.eclipse.e4.workbench/workbench.xmi" beforeDir="false" afterPath="$PROJECT_DIR$/../../ProyectsSpringBootWeb/.metadata/.plugins/org.eclipse.e4.workbench/workbench.xmi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ProyectsSpringBootWeb/.metadata/version.ini" beforeDir="false" afterPath="$PROJECT_DIR$/../../ProyectsSpringBootWeb/.metadata/version.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/MavenWrapperDownloader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bolsadeideas/springboot/app/SpringBootDataJpaApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bolsadeideas/springboot/app/controllers/ClienteController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bolsadeideas/springboot/app/models/dao/ClienteDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-boot-data-jpa - 1/src/main/java/com/bolsadeideas/springboot/app/models/dao/ClienteDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bolsadeideas/springboot/app/models/dao/IClienteDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bolsadeideas/springboot/app/models/entity/Cliente.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/import.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/messages.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/form.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/listar.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/bolsadeideas/springboot/app/SpringBootDataJpaApplicationTests.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="Use Maven wrapper" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
+  <component name="ProjectId" id="2XEHq96yq8AmXPpVZlhiZQZG9XY" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "C:/Users/cdsja/IdeaProjects/Semana4/spring-boot-data-jpa-layout"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\cdsja\IdeaProjects\Semana4\spring-boot-data-jpa\src\main\resources" />
+      <recent name="C:\Users\cdsja\IdeaProjects\Semana4\spring-boot-data-jpa\src\main\resources\static\css" />
+      <recent name="C:\Users\cdsja\IdeaProjects\Semana4\spring-boot-data-jpa\src\main\resources\static" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="SpringBootDataJpaApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.bolsadeideas.springboot.app.SpringBootDataJpaApplication" />
+      <module name="spring-boot-data-jpa" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.bolsadeideas.springboot.app.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.SpringBootDataJpaApplication" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a9bbc191-6b0a-4b71-8c9a-23173a8eaf29" name="Changes" comment="" />
+      <created>1698187508371</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1698187508371</updated>
+    </task>
+    <servers />
+  </component>
+</project>
