@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="layout/layout :: head"></head>
+<body>
+
+	<header th:replace="layout/layout :: header"></header>
+
+	<div class="container py-4">
+
+		<div class="card bg-light">
+			<div class="card-header" th:text="${titulo}"></div>
+			<div class="card-body">
+
+				<h4 class="card-title">
+					<a th:href="@{/form}" class="btn btn-primary">crear cliente</a>
+				</h4>
+
+				<table class="table table-striped">
+					<thead>
+						<tr>
+							<th>Id</th>
+							<th>Día de la cita</th>
+							<th>Nombre</th>
+							<th>Apellido</th>
+							<th>Dirección</th>
+							<th>Dirección 2</th>
+							<th>Ciudad</th>
+							<th>Región</th>
+							<th>Código Postal</th>
+							<th>País</th>
+							<th>Fecha Nacimiento</th>
+							<th>Editar</th>
+							<th>Eliminar</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr th:each="cliente: ${clientes}">
+							<td th:text="${cliente.id}"></td>
+
+							<td th:text="${cliente.createAt}"></td>
+							<td th:text="${cliente.nombre}"></td>
+							<td th:text="${cliente.apellido}"></td>
+
+							<td th:text="${cliente.direccion}"></td>
+							<td th:text="${cliente.direccion2}"></td>
+							<td th:text="${cliente.ciudad}"></td>
+							<td th:text="${cliente.region}"></td>
+							<td th:text="${cliente.codigoPostal}"></td>
+							<td th:text="${cliente.pais}"></td>
+							<td th:text="${cliente.createAt2}"></td>
+
+							<td><a class="btn btn-primary btn-sm"
+								th:href="@{/form/} + ${cliente.id}" th:text="'editar'"></a></td>
+							<td><a class="btn btn-danger btn-sm"
+								th:href="@{/eliminar/} + ${cliente.id}" th:text="'eliminar'"
+								onclick="return confirm('Est�s seguro que quieres eliminar?');"></a></td>
+						</tr>
+					</tbody>
+
+				</table>
+			</div>
+		</div>
+	</div>
+	<footer th:replace="layout/layout :: footer"></footer>
+</body>
+</html>
