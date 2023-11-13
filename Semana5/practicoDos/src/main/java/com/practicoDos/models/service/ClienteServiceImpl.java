@@ -5,7 +5,7 @@ package com.practicoDos.models.service;
 import com.practicoDos.models.dao.IClienteDao;
 import com.practicoDos.models.dao.IFacturaDao;
 import com.practicoDos.models.dao.IProductoDao;
-import com.practicoDos.models.entity.Carrito;
+import com.practicoDos.models.entity.Factura;
 import com.practicoDos.models.entity.Cliente;
 import com.practicoDos.models.entity.Producto;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -70,7 +70,7 @@ public class ClienteServiceImpl implements IClienteService {
 
 	@Override
 	@Transactional
-	public void saveFactura(Carrito factura) {
+	public void saveFactura(Factura factura) {
 		facturaDao.save(factura);
 	}
 

@@ -54,7 +54,7 @@ public class ClienteController {
 		}
 
 		model.put("cliente", cliente);
-		model.put("titulo", "Detalle cliente: " + cliente.getNombre());
+		model.put("titulo", "DETALLE: " + cliente.getNombre());
 		return "ver";
 	}
 
@@ -77,7 +77,7 @@ public class ClienteController {
 
 		Cliente cliente = new Cliente();
 		model.put("cliente", cliente);
-		model.put("titulo", "Formulario de Cliente");
+		model.put("titulo", "CLIENTE");
 		return "form";
 	}
 
@@ -97,7 +97,7 @@ public class ClienteController {
 			return "redirect:/listar";
 		}
 		model.put("cliente", cliente);
-		model.put("titulo", "Editar Cliente");
+		model.put("titulo", "UPDATE");
 		return "form";
 	}
 
@@ -105,7 +105,7 @@ public class ClienteController {
 	public String guardar(@Valid Cliente cliente, BindingResult result, Model model, RedirectAttributes flash, SessionStatus status) {
 
 		if (result.hasErrors()) {
-			model.addAttribute("titulo", "Formulario de Cliente");
+			model.addAttribute("titulo", "CLIENTE");
 			return "form";
 		}
 

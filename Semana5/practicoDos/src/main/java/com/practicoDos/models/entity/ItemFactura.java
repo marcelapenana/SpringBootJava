@@ -5,7 +5,7 @@ import jakarta.persistence.*;
 import java.io.Serializable;
 
 @Entity
-@Table(name = "items_carritos")
+@Table(name = "carritos_items")
 public class ItemFactura  implements Serializable {
 
     @Id
@@ -39,5 +39,12 @@ public class ItemFactura  implements Serializable {
 
     public void setCantidad(Integer cantidad) {
         this.cantidad = cantidad;
+    }
+    public Producto getProducto() {
+        return producto;
+    }
+
+    public void setProducto(Producto producto) {
+        this.producto = producto;
     }
 }

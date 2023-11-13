@@ -1,7 +1,7 @@
 package com.practicoDos.models.service;
 
 
-import com.practicoDos.models.entity.Carrito;
+import com.practicoDos.models.entity.Factura;
 import com.practicoDos.models.entity.Cliente;
 import com.practicoDos.models.entity.Producto;
 import org.springframework.data.domain.Page;
@@ -23,7 +23,7 @@ public interface IClienteService {
 
     public List<Producto> findByNombre(String term);
 
-    public void saveFactura(Carrito factura);
+    public void saveFactura(Factura factura);
 
     public Producto findProductoById(Long id);
 }

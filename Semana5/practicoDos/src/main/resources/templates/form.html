@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <head th:replace="layout/layout :: head"></head>
-<body>
+<body >
 
 	<header th:replace="layout/layout :: header"></header>
 
-	<div class="container py-4">
+	<div class="container py-2">
 
 		<div class="card bg-white text-dark">
 			<div class="card-header" th:text="${titulo}"></div>
@@ -18,40 +18,36 @@
 				</div>
 				<form th:action="@{/form}" th:object="${cliente}" method="post" enctype="multipart/form-data">
 					<div class="form-group row">
-						<label class="col-sm-2 col-form-label">Nombre</label>
-						<div class="col-sm-6">
+						<label class="col-sm-2 col-form-label">NOMBRE</label>
+						<div class="col-sm-4">
 							<input type="text" th:field="*{nombre}" class="form-control"
 								th:errorclass="'form-control alert-danger'" /> <small
 								class="form-text text-danger"
 								th:if="${#fields.hasErrors('nombre')}" th:errors="*{nombre}"></small>
 						</div>
 					</div>
-
 					<div class="form-group row">
-						<label class="col-sm-2 col-form-label">Dirección</label>
-						<div class="col-sm-6">
+						<label class="col-sm-2 col-form-label">DIRECCIÓN</label>
+						<div class="col-sm-4">
 							<input type="text" th:field="*{direccion}" class="form-control"
-								   th:errorclass="'form-control alert-danger'" /> <small
+								th:errorclass="'form-control alert-danger'" /> <small
 								class="form-text text-danger"
 								th:if="${#fields.hasErrors('direccion')}" th:errors="*{direccion}"></small>
 						</div>
 					</div>
-
-
 					<div class="form-group row">
-						<label class="col-sm-2 col-form-label">Fecha</label>
-						<div class="col-sm-6">
+						<label class="col-sm-2 col-form-label">FECHA</label>
+						<div class="col-sm-4">
 							<input type="date" class="form-control" th:field="*{createAt}"
 								th:errorclass="'form-control alert-danger'" /> <small
 								class="form-text text-danger"
 								th:if="${#fields.hasErrors('createAt')}" th:errors="*{createAt}"></small>
 						</div>
 					</div>
-
 					
 					<div class="form-group row">
-						<div class="col-sm-6">
-							<input type="submit" value="Crear Cliente" class="btn btn-secondary" />
+						<div class="col-sm-4">
+							<input type="submit" value="CREAR" class="btn btn-warning" />
 						</div>
 					</div>
 

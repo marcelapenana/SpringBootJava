@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0b480c54-bab5-441a-8402-6d6ea1902a71" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../07-ExamenPrueba/src/main/resources/import.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springboot-web/src/main/java/com/springbootweb/springbootweb/controllers/EjemploParams.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../01-hibernate_jpa/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../01-hibernate_jpa/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
@@ -89,8 +89,26 @@
       <change beforePath="$PROJECT_DIR$/../07-ExamenPrueba/src/main/java/org/example/entity/SubjectTeacher.java" beforeDir="false" afterPath="$PROJECT_DIR$/../07-ExamenPrueba/src/main/java/org/example/entity/SubjectTeacher.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../07-ExamenPrueba/src/main/java/org/example/entity/Teacher.java" beforeDir="false" afterPath="$PROJECT_DIR$/../07-ExamenPrueba/src/main/java/org/example/entity/Teacher.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ExamenPrueba-07/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springboot-web/src/main/java/com/springbootweb/springbootweb/controllers/IndexControllers.java" beforeDir="false" afterPath="$PROJECT_DIR$/../springboot-web/src/main/java/com/springbootweb/springbootweb/controllers/IndexControllers.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springboot-web/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../springboot-web/src/main/resources/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot-web/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot-web/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot-web/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot-web/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot-web/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot-web/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot-web/src/main/java/com/springbootweb/springbootweb/SpringbootWebApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot-web/src/main/java/com/springbootweb/springbootweb/controllers/IndexControllers.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot-web/src/main/java/com/springbootweb/springbootweb/models/Usuario.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot-web/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot-web/src/main/resources/static/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot-web/src/main/resources/static/images/spring.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot-web/src/main/resources/templates/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot-web/src/main/resources/templates/listar.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot-web/src/main/resources/templates/params/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot-web/src/main/resources/templates/params/ver.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot-web/src/main/resources/templates/perfil.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot-web/src/main/resources/templates/variables/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot-web/src/main/resources/templates/variables/ver.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot-web/src/test/java/com/springbootweb/springbootweb/SpringbootWebApplicationTests.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,7 +123,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
@@ -121,7 +139,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "C:/Users/cdsja/IdeaProjects/Semana2/03-hibernate-jpa-asociaciones-app - copia",
+    "last_opened_file_path": "C:/Users/cdsja/IdeaProjects/Semana2/05-hibernate-jpa-asociaciones-app",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
@@ -200,16 +218,6 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="GroovyScriptRunConfiguration" factoryName="Groovy">
-      <setting name="path" value="" />
-      <setting name="vmparams" value="" />
-      <setting name="params" value="" />
-      <setting name="workDir" value="file://$PROJECT_DIR$" />
-      <setting name="debug" value="false" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>

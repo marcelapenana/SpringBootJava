@@ -32,10 +32,10 @@ public class Cliente implements Serializable {
     }
 
     @OneToMany(mappedBy = "cliente", fetch = FetchType.LAZY, cascade = CascadeType.ALL)
-    private List<Carrito> carritos;
+    private List<Factura> facturas;
 
     public Cliente() {
-        carritos = new ArrayList<Carrito>();
+        facturas = new ArrayList<Factura>();
     }
 
 
@@ -72,5 +72,13 @@ public class Cliente implements Serializable {
 
     public void setCreateAt(Date createAt) {
         this.createAt = createAt;
+    }
+
+    public List<Factura> getFacturas() {
+        return facturas;
+    }
+
+    public void setFacturas(List<Factura> facturas) {
+        this.facturas = facturas;
     }
 }

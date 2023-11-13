@@ -9,7 +9,7 @@ import java.util.List;
 
 @Entity
 @Table(name = "carritos")
-public class Carrito implements Serializable {
+public class Factura implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -28,10 +28,10 @@ public class Carrito implements Serializable {
 
     //List tipo itemsFactura para la relación
     @OneToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
-    @JoinColumn(name = "carrito_id")
+    @JoinColumn(name = "factura_id")
     private List<ItemFactura> items;
 
-    public Carrito() {
+    public Factura() {
         this.items=new ArrayList<ItemFactura>();
     }
 
