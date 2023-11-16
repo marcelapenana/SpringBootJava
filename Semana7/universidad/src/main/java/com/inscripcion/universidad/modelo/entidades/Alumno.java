@@ -3,33 +3,29 @@ package com.inscripcion.universidad.modelo.entidades;
 import java.io.Serializable;
 
 public class Alumno  extends Persona {
-    private Integer id;
-    private String nombre;
+
+    private String carnet;
 
     public Alumno() {
     }
 
-    public Integer getId() {
-        return id;
+    public Alumno(Integer id, String nombre, String apellido, String dni, String direccion, String carnet) {
+        super(id, nombre, apellido, dni, direccion);
+        this.carnet = carnet;
     }
 
-    public void setId(Integer id) {
-        this.id = id;
+    public String getCarnet() {
+        return carnet;
     }
 
-    public String getNombre() {
-        return nombre;
-    }
-
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
+    public void setCarnet(String carnet) {
+        this.carnet = carnet;
     }
 
     @Override
     public String toString() {
         return "Alumno{" +
-                "id=" + id +
-                ", nombre='" + nombre + '\'' +
+                "carnet='" + carnet + '\'' +
                 '}';
     }
 }

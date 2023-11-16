@@ -1,56 +1,31 @@
 package com.inscripcion.universidad.modelo.entidades;
 
 import java.io.Serializable;
+import java.math.BigDecimal;
 
-public class Profesor implements Serializable {
+public class Profesor extends Persona {
 
-    private  Integer id;
-    private String nombre;
-    private Double Sueldo;
-    private int antiguedad;
+    private BigDecimal Sueldo;
 
     public Profesor() {
     }
 
-    public Integer getId() {
-        return id;
+    public Profesor(Integer id, String nombre, String apellido, String dni, String direccion) {
+        super(id, nombre, apellido, dni, direccion);
     }
 
-    public void setId(Integer id) {
-        this.id = id;
-    }
-
-    public String getNombre() {
-        return nombre;
-    }
-
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
-    }
-
-    public Double getSueldo() {
+    public BigDecimal getSueldo() {
         return Sueldo;
     }
 
-    public void setSueldo(Double sueldo) {
+    public void setSueldo(BigDecimal sueldo) {
         Sueldo = sueldo;
-    }
-
-    public int getAntiguedad() {
-        return antiguedad;
-    }
-
-    public void setAntiguedad(int antiguedad) {
-        this.antiguedad = antiguedad;
     }
 
     @Override
     public String toString() {
         return "Profesor{" +
-                "id=" + id +
-                ", nombre='" + nombre + '\'' +
-                ", Sueldo=" + Sueldo +
-                ", antiguedad=" + antiguedad +
+                "Sueldo=" + Sueldo +
                 '}';
     }
 }
