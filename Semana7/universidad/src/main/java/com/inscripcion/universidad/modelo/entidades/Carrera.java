@@ -1,15 +1,29 @@
 package com.inscripcion.universidad.modelo.entidades;
 
+import jakarta.persistence.*;
+
 import java.io.Serializable;
 import java.util.Objects;
+import java.util.Set;
 
+@Entity
+@Table(name = "carreras")
 public class Carrera implements Serializable {
-
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
+    @Column(nullable = false, length = 60)
     private String nombre;
-
+    @Column(name = "cantidad_anios")
     private Integer cantidadAnos;
+    @Column(nullable = false, length = 60)
     private String Facultad;
+
+    /*alumno*/
+  /*  @OneToMany(mappedBy = "carrera",
+              fetch = FetchType.LAZY
+              )
+    private Set<Alumno> alumnos;*/
 
     public Carrera() {
     }
@@ -52,6 +66,14 @@ public class Carrera implements Serializable {
     public void setFacultad(String facultad) {
         Facultad = facultad;
     }
+
+  /*  public Set<Alumno> getAlumnos() {
+        return alumnos;
+    }
+
+    public void setAlumnos(Set<Alumno> alumnos) {
+        this.alumnos = alumnos;
+    }*/
 
     @Override
     public boolean equals(Object o) {

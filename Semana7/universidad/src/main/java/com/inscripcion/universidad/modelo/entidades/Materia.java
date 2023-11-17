@@ -1,9 +1,13 @@
 package com.inscripcion.universidad.modelo.entidades;
 
+import jakarta.persistence.*;
+
 import java.io.Serializable;
-
+@Entity
+@Table(name = "materias")
 public class Materia implements Serializable {
-
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
     private String nombre;
     private String titular;
