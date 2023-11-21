@@ -23,6 +23,8 @@ public abstract class Persona implements Serializable {
     private LocalDateTime fechaAlta;
     @Column(name = "fecha_modificacion")
     private LocalDateTime fechaModificacion;
+
+
     @Embedded
     @AttributeOverrides({
             @AttributeOverride(name = "codigoPostal", column = @Column(name = "codigo_postal")),

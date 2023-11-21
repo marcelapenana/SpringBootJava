@@ -8,7 +8,7 @@ import java.io.Serializable;
 import java.util.Objects;
 @Entity
 @Table(name = "personas")
-//@Inheritance(strategy = InheritanceType.JOINED)
+@Inheritance(strategy = InheritanceType.JOINED)
 public abstract class Persona implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -26,11 +26,11 @@ public abstract class Persona implements Serializable {
     public Persona() {
     }
 
-    public Persona(Integer id, String nombre, String apellido, String dni, String direccion) {
+    public Persona(Integer id, String nombre, String apellido, String dui, String direccion) {
         this.id = id;
         this.nombre = nombre;
         this.apellido = apellido;
-        this.dui = dui;
+        this.dui = this.dui;
         this.direccion = direccion;
     }
 
@@ -73,6 +73,7 @@ public abstract class Persona implements Serializable {
     public void setDireccion(String direccion) {
         this.direccion = direccion;
     }
+
 
     @Override
     public String toString() {

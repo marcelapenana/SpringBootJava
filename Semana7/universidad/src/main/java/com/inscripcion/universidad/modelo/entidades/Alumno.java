@@ -5,21 +5,21 @@ import jakarta.persistence.*;
 import java.io.Serializable;
 @Entity
 @Table(name = "alumnos")
-//@PrimaryKeyJoinColumn(name = "persona_id")
+@PrimaryKeyJoinColumn(name = "persona_id")
 public class Alumno  extends Persona {
 
     private String carnet;
 
-    /*carrera*/
+    /*Asistencia*/
 
-   /* @ManyToOne(
+   @ManyToOne(
             optional = true,
             fetch =FetchType.LAZY,
             cascade ={CascadeType.PERSIST,
                       CascadeType.MERGE}
     )
-    @JoinColumn(name="carrera_id")
-    private  Carrera carrera;*/
+    @JoinColumn(name="asistencia_id")
+    private  Asistencia asistencia;
 
     public Alumno() {
     }
@@ -37,13 +37,13 @@ public class Alumno  extends Persona {
         this.carnet = carnet;
     }
 
-   /* public Carrera getCarrera() {
-        return carrera;
+    public Asistencia getAsistencia() {
+        return asistencia;
     }
 
-    public void setCarrera(Carrera carrera) {
-        this.carrera = carrera;
-    }*/
+    public void setAsistencia(Asistencia asistencia) {
+        this.asistencia = asistencia;
+    }
 
     @Override
     public String toString() {

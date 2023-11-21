@@ -20,10 +20,10 @@ public class Carrera implements Serializable {
     private String Facultad;
 
     /*alumno*/
-  /*  @OneToMany(mappedBy = "carrera",
+    @OneToMany(mappedBy = "carrera",
               fetch = FetchType.LAZY
               )
-    private Set<Alumno> alumnos;*/
+    private Set<Alumno> alumnos;
 
     public Carrera() {
     }
@@ -67,13 +67,13 @@ public class Carrera implements Serializable {
         Facultad = facultad;
     }
 
-  /*  public Set<Alumno> getAlumnos() {
+    public Set<Alumno> getAlumnos() {
         return alumnos;
     }
 
     public void setAlumnos(Set<Alumno> alumnos) {
         this.alumnos = alumnos;
-    }*/
+    }
 
     @Override
     public boolean equals(Object o) {

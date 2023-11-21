@@ -3,6 +3,8 @@ package com.inscripcion.universidad.modelo.entidades;
 import jakarta.persistence.*;
 
 import java.io.Serializable;
+import java.util.Set;
+
 @Entity
 @Table(name = "materias")
 public class Materia implements Serializable {
@@ -11,6 +13,17 @@ public class Materia implements Serializable {
     private Integer id;
     private String nombre;
     private String titular;
+
+    @ManyToOne(
+         optional = true,
+         fetch =FetchType.LAZY,
+          cascade ={
+                 CascadeType.PERSIST,
+                 CascadeType.MERGE
+          }
+    )
+    @JoinColumn(name = "profesor_id")
+    private Set<Profesor> profesor;
 
     public Materia() {
     }
@@ -37,6 +50,14 @@ public class Materia implements Serializable {
 
     public void setTitular(String titular) {
         this.titular = titular;
+    }
+
+    public Set<Profesor> getProfesor() {
+        return profesor;
+    }
+
+    public void setProfesor(Set<Profesor> profesor) {
+        this.profesor = profesor;
     }
 
     @Override

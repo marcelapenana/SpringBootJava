@@ -48,6 +48,8 @@ public class Profesor extends Persona {
         this.carreras = carreras;
     }
 
+
+
     @Override
     public String toString() {
         return super.toString() +
