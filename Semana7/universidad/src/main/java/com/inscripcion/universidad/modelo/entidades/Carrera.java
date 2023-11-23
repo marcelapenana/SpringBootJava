@@ -19,12 +19,6 @@ public class Carrera implements Serializable {
     @Column(nullable = false, length = 60)
     private String Facultad;
 
-    /*alumno*/
-    @OneToMany(mappedBy = "carrera",
-              fetch = FetchType.LAZY
-              )
-    private Set<Alumno> alumnos;
-
     public Carrera() {
     }
 
@@ -67,13 +61,7 @@ public class Carrera implements Serializable {
         Facultad = facultad;
     }
 
-    public Set<Alumno> getAlumnos() {
-        return alumnos;
-    }
 
-    public void setAlumnos(Set<Alumno> alumnos) {
-        this.alumnos = alumnos;
-    }
 
     @Override
     public boolean equals(Object o) {

@@ -14,17 +14,33 @@ public class Materia implements Serializable {
     private String nombre;
     private String titular;
 
+    /*Carrera */
+    @ManyToMany(
+            fetch = FetchType.LAZY,
+            cascade = {
+                    CascadeType.PERSIST,
+                    CascadeType.MERGE
+            }
+    )
+    @JoinTable(
+            name = "materia_carrera",
+            joinColumns = @JoinColumn(name = "materia_id"),
+            inverseJoinColumns = @JoinColumn(name = "carrera_id")
+    )
+    private Set<Carrera> carreras;
+
+
+    /*Profesores*/
     @ManyToOne(
-         optional = true,
-         fetch =FetchType.LAZY,
-          cascade ={
-                 CascadeType.PERSIST,
-                 CascadeType.MERGE
-          }
+            optional = true,
+            fetch = FetchType.LAZY,
+            cascade = {
+                    CascadeType.PERSIST,
+                    CascadeType.MERGE
+            }
     )
     @JoinColumn(name = "profesor_id")
-    private Set<Profesor> profesor;
-
+    private Profesor profesor;
     public Materia() {
     }
 
@@ -52,12 +68,12 @@ public class Materia implements Serializable {
         this.titular = titular;
     }
 
-    public Set<Profesor> getProfesor() {
-        return profesor;
+    public Set<Carrera> getCarreras() {
+        return carreras;
     }
 
-    public void setProfesor(Set<Profesor> profesor) {
-        this.profesor = profesor;
+    public void setCarreras(Set<Carrera> carreras) {
+        this.carreras = carreras;
     }
 
     @Override

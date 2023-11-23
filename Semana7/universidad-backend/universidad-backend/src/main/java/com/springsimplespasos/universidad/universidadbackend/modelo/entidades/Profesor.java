@@ -10,6 +10,7 @@ import java.util.Set;
 public class Profesor extends Persona {
 
     private BigDecimal sueldo;
+    /*//////////////////////////////////////////////////////*/
     @ManyToMany(
             fetch = FetchType.LAZY,
             cascade = {
@@ -23,6 +24,8 @@ public class Profesor extends Persona {
             inverseJoinColumns = @JoinColumn(name = "carrera_id")
     )
     private Set<Carrera> carreras;
+    /*//////////////////////////////////////////////////////*/
+
 
     public Profesor() {
     }
@@ -47,6 +50,7 @@ public class Profesor extends Persona {
     public void setCarreras(Set<Carrera> carreras) {
         this.carreras = carreras;
     }
+
 
 
 

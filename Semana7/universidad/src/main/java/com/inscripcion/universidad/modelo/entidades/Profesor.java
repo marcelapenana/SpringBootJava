@@ -13,21 +13,6 @@ public class Profesor extends Persona {
 
     private BigDecimal Sueldo;
 
-    @ManyToMany(
-            fetch = FetchType.LAZY,
-            cascade = {
-                    CascadeType.PERSIST,
-                    CascadeType.MERGE
-            }
-    )
-    @JoinTable(
-            name= "profesor_carrera",
-            joinColumns =@JoinColumn(name = "profsor_id"),
-            inverseJoinColumns =@JoinColumn(name = "carrera_id")
-
-    )
-    private Set<Carrera> carreras;
-
     public Profesor() {
     }
 
@@ -43,13 +28,6 @@ public class Profesor extends Persona {
         Sueldo = sueldo;
     }
 
-    public Set<Carrera> getCarreras() {
-        return carreras;
-    }
-
-    public void setCarreras(Set<Carrera> carreras) {
-        this.carreras = carreras;
-    }
 
     @Override
     public String toString() {

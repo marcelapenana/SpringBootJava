@@ -3,12 +3,28 @@ package com.inscripcion.universidad.modelo.entidades;
 import jakarta.persistence.*;
 
 import java.io.Serializable;
+import java.util.Set;
+
 @Entity
 @Table(name = "alumnos")
 @PrimaryKeyJoinColumn(name = "persona_id")
 public class Alumno  extends Persona {
 
     private String carnet;
+    /*Materia */
+    @ManyToMany(
+            fetch = FetchType.LAZY,
+            cascade = {
+                    CascadeType.PERSIST,
+                    CascadeType.MERGE
+            }
+    )
+    @JoinTable(
+            name = "alumno_materia",
+            joinColumns = @JoinColumn(name = "alumno_id"),
+            inverseJoinColumns = @JoinColumn(name = "materia_id")
+    )
+    private Set<Materia> materias;
 
     /*Asistencia*/
 
@@ -43,6 +59,14 @@ public class Alumno  extends Persona {
 
     public void setAsistencia(Asistencia asistencia) {
         this.asistencia = asistencia;
+    }
+
+    public Set<Materia> getMaterias() {
+        return materias;
+    }
+
+    public void setMaterias(Set<Materia> materias) {
+        this.materias = materias;
     }
 
     @Override

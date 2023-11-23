@@ -13,6 +13,15 @@ public class Asistencia implements Serializable {
     private Integer id;
     private LocalDateTime fecha;
 
+    @ManyToOne(
+            optional = true,
+            fetch =FetchType.LAZY,
+            cascade ={CascadeType.PERSIST,
+                    CascadeType.MERGE}
+    )
+    @JoinColumn(name="materia_id")
+    private  Materia materia;
+
     public Asistencia() {
     }
 
@@ -30,6 +39,14 @@ public class Asistencia implements Serializable {
 
     public void setFecha(LocalDateTime fecha) {
         this.fecha = fecha;
+    }
+
+    public Materia getMateria() {
+        return materia;
+    }
+
+    public void setMateria(Materia materia) {
+        this.materia = materia;
     }
 
     @Override
