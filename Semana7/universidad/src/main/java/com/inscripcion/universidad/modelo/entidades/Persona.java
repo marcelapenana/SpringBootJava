@@ -30,7 +30,7 @@ public abstract class Persona implements Serializable {
         this.id = id;
         this.nombre = nombre;
         this.apellido = apellido;
-        this.dui = this.dui;
+        this.dui = dui;
         this.direccion = direccion;
     }
 

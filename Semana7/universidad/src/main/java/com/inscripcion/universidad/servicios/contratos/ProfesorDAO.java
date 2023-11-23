@@ -8,5 +8,5 @@ import java.util.Optional;
 
 public interface ProfesorDAO extends GenericoDAO<Profesor>{
 
-    Optional<Persona> buscarPorNombre(String nombre);
+
 }
