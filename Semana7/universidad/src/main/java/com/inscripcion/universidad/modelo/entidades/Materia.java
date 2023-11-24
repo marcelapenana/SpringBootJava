@@ -44,6 +44,13 @@ public class Materia implements Serializable {
     public Materia() {
     }
 
+    public Materia(Integer id, String nombre, String titular, Profesor profesor) {
+        this.id = id;
+        this.nombre = nombre;
+        this.titular = titular;
+        this.profesor = profesor;
+    }
+
     public Integer getId() {
         return id;
     }
@@ -74,6 +81,14 @@ public class Materia implements Serializable {
 
     public void setCarreras(Set<Carrera> carreras) {
         this.carreras = carreras;
+    }
+
+    public Profesor getProfesor() {
+        return profesor;
+    }
+
+    public void setProfesor(Profesor profesor) {
+        this.profesor = profesor;
     }
 
     @Override

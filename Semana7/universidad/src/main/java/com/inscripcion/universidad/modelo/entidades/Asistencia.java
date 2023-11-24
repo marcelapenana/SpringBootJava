@@ -25,6 +25,11 @@ public class Asistencia implements Serializable {
     public Asistencia() {
     }
 
+    public Asistencia(Integer id, Materia materia) {
+        this.id = id;
+        this.materia = materia;
+    }
+
     public Integer getId() {
         return id;
     }
@@ -33,13 +38,6 @@ public class Asistencia implements Serializable {
         this.id = id;
     }
 
-    public LocalDateTime getFecha() {
-        return fecha;
-    }
-
-    public void setFecha(LocalDateTime fecha) {
-        this.fecha = fecha;
-    }
 
     public Materia getMateria() {
         return materia;
@@ -53,7 +51,6 @@ public class Asistencia implements Serializable {
     public String toString() {
         return "Asistencia{" +
                 "id=" + id +
-                ", fecha=" + fecha +
                 '}';
     }
 }

@@ -11,23 +11,23 @@ import java.util.Set;
 @PrimaryKeyJoinColumn(name = "persona_id")
 public class Profesor extends Persona {
 
-    private BigDecimal Sueldo;
+    private Double Sueldo;
 
     public Profesor() {
     }
 
-    public Profesor(Integer id, String nombre, String apellido, String dui, String direccion) {
+    public Profesor(Integer id, String nombre, String apellido, String dui, String direccion, Double sueldo) {
         super(id, nombre, apellido, dui, direccion);
-    }
-
-    public BigDecimal getSueldo() {
-        return Sueldo;
-    }
-
-    public void setSueldo(BigDecimal sueldo) {
         Sueldo = sueldo;
     }
 
+    public Double getSueldo() {
+        return Sueldo;
+    }
+
+    public void setSueldo(Double sueldo) {
+        Sueldo = sueldo;
+    }
 
     @Override
     public String toString() {
