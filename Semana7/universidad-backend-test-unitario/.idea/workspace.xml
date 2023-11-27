@@ -5,27 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8dce1ebf-fed3-440c-a4b0-dc3b92d49ec9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../universidad-backend-/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../universidad-backend-/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../universidad-backend-/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../universidad-backend-/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../universidad-backend-/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../universidad-backend-/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Semana6/universidad" beforeDir="false" afterPath="$PROJECT_DIR$/../../Semana6/universidad" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/universidad-backend/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/universidad-backend/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/universidad-backend/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/universidad-backend/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../universidad-backend/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../universidad-backend/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../universidad-backend/universidad-backend/src/main/java/com/springsimplespasos/universidad/universidadbackend/modelo/entidades/Carrera.java" beforeDir="false" afterPath="$PROJECT_DIR$/../universidad-backend/universidad-backend/src/main/java/com/springsimplespasos/universidad/universidadbackend/modelo/entidades/Carrera.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../universidad-backend/universidad-backend/src/main/java/com/springsimplespasos/universidad/universidadbackend/modelo/entidades/Profesor.java" beforeDir="false" afterPath="$PROJECT_DIR$/../universidad-backend/universidad-backend/src/main/java/com/springsimplespasos/universidad/universidadbackend/modelo/entidades/Profesor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../universidad/src/main/java/com/inscripcion/universidad/modelo/entidades/Alumno.java" beforeDir="false" afterPath="$PROJECT_DIR$/../universidad/src/main/java/com/inscripcion/universidad/modelo/entidades/Alumno.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../universidad/src/main/java/com/inscripcion/universidad/modelo/entidades/Asistencia.java" beforeDir="false" afterPath="$PROJECT_DIR$/../universidad/src/main/java/com/inscripcion/universidad/modelo/entidades/Asistencia.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../universidad/src/main/java/com/inscripcion/universidad/modelo/entidades/Carrera.java" beforeDir="false" afterPath="$PROJECT_DIR$/../universidad/src/main/java/com/inscripcion/universidad/modelo/entidades/Carrera.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../universidad/src/main/java/com/inscripcion/universidad/modelo/entidades/Materia.java" beforeDir="false" afterPath="$PROJECT_DIR$/../universidad/src/main/java/com/inscripcion/universidad/modelo/entidades/Materia.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../universidad/src/main/java/com/inscripcion/universidad/modelo/entidades/Profesor.java" beforeDir="false" afterPath="$PROJECT_DIR$/../universidad/src/main/java/com/inscripcion/universidad/modelo/entidades/Profesor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../universidad/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../universidad/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../universidad-backend-GuzMel/src/main/java/com/universidadbackend/UniversidadBackendApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../universidad-backend-GuzMel/src/main/java/com/universidadbackend/UniversidadBackendApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,25 +20,25 @@
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 6
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
   <component name="ProjectId" id="2YailLaBqq6MtfqPbPM82k1p5OR" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/cdsja/IdeaProjects/Semana7/universidad-backend-test-unitario",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "preferences.keymap"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/cdsja/IdeaProjects/Semana7/universidad-backend-test-unitario&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
