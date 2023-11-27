@@ -1,0 +1,9 @@
+com\universidadbackend\servicios\implementaciones\CarreraDAOImplTest.class
+com\universidadbackend\UniversidadBackendApplicationTests$Calculadora.class
+com\universidadbackend\UniversidadBackendApplicationTests.class
+com\universidadbackend\repositorios\CarreraRepositoryTest.class
+com\universidadbackend\repositorios\PersonaRepositoryTest.class
+com\universidadbackend\servicios\implementaciones\AlumnoDAOImplTest.class
+com\universidadbackend\servicios\implementaciones\PersonaDAOImplTest.class
+com\universidadbackend\datos\DatosDummy.class
+com\universidadbackend\repositorios\AlumnoRepositoryTest.class
